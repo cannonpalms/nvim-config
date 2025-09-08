@@ -8,8 +8,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.completion.copilot-vim-cmp" },
-  -- { import = "astrocommunity.completion.copilot-vim" },
-  -- { import = "astrocommunity.editing-support.copilotchat-nvim" },
 
   -- Color Schemes
   { import = "astrocommunity.colorscheme.gruvbox-baby" },

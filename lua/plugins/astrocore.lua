@@ -25,11 +25,14 @@ return {
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
-        relativenumber = false, -- sets vim.opt.relativenumber
+        relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+
+        -- Use the dark theme of whatever our colorscheme is
+        background = "dark", -- sets vim.opt.background
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)

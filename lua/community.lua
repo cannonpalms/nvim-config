@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.completion.copilot-vim-cmp" },
 
   -- Color Schemes
-  { import = "astrocommunity.colorscheme.gruvbox-baby" },
+  -- Use gruvbox dark hard
+  { import = "astrocommunity.colorscheme.gruvbox-nvim" },
 }

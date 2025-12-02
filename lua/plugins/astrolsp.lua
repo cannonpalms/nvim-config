@@ -42,7 +42,35 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      rust_analyzer = {
+        settings = {
+          ["rust-analyzer"] = {
+            -- check = {
+            --   command = "check",
+            -- },
+            diagnostics = {
+              enable = true,
+              -- enableExperimental = true,
+              styleLints = {
+                enabled = true,
+              },
+            },
+            inlayHints = {
+              closureReturnTypeHints = {
+                enable = "with_block",
+              },
+              -- expressionAdjustmentHints = {
+              --   enable = "always",
+              -- },
+              maxLength = 45,
+            },
+            references = {
+              excludeImports = true,
+              excludeTests = true,
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {

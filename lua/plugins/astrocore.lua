@@ -77,6 +77,11 @@ return {
 
         -- quick save
         ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+
+        -- Match the visual shape of the key: `\` for vertical, `-` for horizontal
+        ["\\"] = { "<Cmd>vsplit<CR>", desc = "Vertical Split" },
+        ["-"] = { "<Cmd>split<CR>", desc = "Horizontal Split" },
+        ["|"] = false,
       },
     },
   },
